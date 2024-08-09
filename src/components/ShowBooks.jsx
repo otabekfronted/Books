@@ -1,15 +1,14 @@
 "use client";
 
-function ShowBooks({ books }) {
+// `books` o'zgaruvchisi massiv ekanligini tekshirish uchun
+function ShowBooks({ books = [] }) {
     return (
         <div>
-            {books.map((book) => {
-                return (
-                    <div key={book.id}>
-                        <h3>{book.title}</h3>
-                    </div>
-                );
-            })}
+            {books.data.map((book) => (
+                <div key={book.id}>
+                    <h3>{book.title}</h3>
+                </div>
+            ))}
         </div>
     );
 }
