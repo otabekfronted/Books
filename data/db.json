@@ -1,0 +1,19 @@
+{
+  "books": [
+    {
+      "id": "1",
+      "title": "Yuldizli tunlar",
+      "author": "Primqul Qodirov"
+    },
+    {
+      "id": "2c9c",
+      "title": "Hello",
+      "author": "Otabek"
+    },
+    {
+      "id": "7a56",
+      "title": "Otabek",
+      "author": "Hayoti"
+    }
+  ]
+}
