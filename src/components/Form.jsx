@@ -22,13 +22,13 @@ function Form() {
     return (
         <div>
             <form className="w-96" onSubmit={handleSubmit}>
-                <div className="flex flex-col gap-1">
+                <div className="flex flex-col gap-1 mb-2">
                     <label htmlFor="title">Title:</label>
                     <input
                         type="text"
                         id="title"
                         name="title"
-                        className="border"
+                        className="border border-cyan-700 border-xl py-1 rounded pl-2"
                     />
                 </div>
                 <div className="flex flex-col gap-1">
@@ -37,11 +37,16 @@ function Form() {
                         type="text"
                         id="author"
                         name="author"
-                        className="border"
+                        className="border border-cyan-700 border-xl py-1 rounded pl-2"
                     />
                 </div>
                 <div className="mt-5">
-                    <button className="px-4 py-2 mb-2 border">Submit</button>
+                    <button
+                        className="px-4 py-2 mb-5 border bg-emerald-600 text-white 
+                    rounded hover:bg-emerald-700 transition"
+                    >
+                        Submit
+                    </button>
                 </div>
             </form>
         </div>
