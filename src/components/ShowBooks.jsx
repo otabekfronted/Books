@@ -1,12 +1,15 @@
 "use client";
 
-// `books` o'zgaruvchisi massiv ekanligini tekshirish uchun
 function ShowBooks({ books = [] }) {
     return (
-        <div>
+        <div className="flex flex-wrap gap-4">
             {books.data.map((book) => (
-                <div key={book.id}>
-                    <h3>{book.title}</h3>
+                <div
+                    key={book.id}
+                    className="p-4 border border-gray-300 rounded-lg shadow-md w-60"
+                >
+                    <h3 className="text-xl font-semibold mb-2">{book.title}</h3>
+                    <p className="text-gray-600">{book.author}</p>
                 </div>
             ))}
         </div>

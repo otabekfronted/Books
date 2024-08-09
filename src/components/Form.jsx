@@ -41,7 +41,7 @@ function Form() {
                     />
                 </div>
                 <div className="mt-5">
-                    <button className="px-4 py-2 border">Submit</button>
+                    <button className="px-4 py-2 mb-2 border">Submit</button>
                 </div>
             </form>
         </div>
