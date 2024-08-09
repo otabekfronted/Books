@@ -7,13 +7,16 @@ function Form() {
         const title = formData.get("title");
         const author = formData.get("author");
 
-        fetch("http://localhost:4000/books", {
-            method: "POST",
-            headers: {
-                "Content-type": "application/json",
-            },
-            body: JSON.stringify({ title, author }),
-        }).then(() => console.log("success"));
+        fetch(
+            "https://online-json-server-api.up.railway.app/project/66b5a4e0340dd55056fb66ff/books",
+            {
+                method: "POST",
+                headers: {
+                    "Content-type": "application/json",
+                },
+                body: JSON.stringify({ title, author }),
+            }
+        ).then(() => console.log("success"));
     };
 
     return (
